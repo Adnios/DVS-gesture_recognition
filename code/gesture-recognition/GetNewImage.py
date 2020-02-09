@@ -16,7 +16,7 @@ while True:
         img_roi = frame[img_roi_y:(img_roi_y + img_roi_height), img_roi_x:(img_roi_x + img_roi_width)]
         cv.imshow("frame", img_roi)
         index += 1
-        if index % 20 == 0:   # 每5帧保存一次图像
+        if index % 100 == 0:   # 每5帧保存一次图像
             path = "./data/testImage/1/"
             os.system("rm data/testImage/1/*")
             name = "test"  # 给录制的手势命名
@@ -25,7 +25,7 @@ while True:
         c = cv.waitKey(50)  # 每50ms判断一下键盘的触发。  0则为无限等待。
         if c == 27:  # 在ASCII码中27表示ESC键，ord函数可以将字符转换为ASCII码。
             break
-        if index == 20:
+        if index == 100:
             break
     else:
         break
