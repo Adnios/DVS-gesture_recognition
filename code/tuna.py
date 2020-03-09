@@ -199,7 +199,7 @@ class Base(object):
 
     @classmethod
     def log(cls, msg, level='i'):
-        levels = "viodwe" # verbose, info, ok, debug, warning, error
+        levels = "viodwe" # verbose, info, ok, debug, warning, 8biterror
         assert level in levels
 
         global verbose

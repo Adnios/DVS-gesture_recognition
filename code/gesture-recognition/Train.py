@@ -7,7 +7,7 @@ import Train_model
 import Train_inputdata
 
 
-N_CLASSES = 5  # 5种手势
+N_CLASSES = 3  # 5种手势
 IMG_W = 227  # resize图像，太大的话训练时间久
 IMG_H = 227
 BATCH_SIZE = 32  # 数据集较小
@@ -15,7 +15,7 @@ CAPACITY = 320
 MAX_STEP = 1000
 learning_rate = 0.0001  # 学习率
 
-train_dir = './data/train/'
+train_dir = './Celex_data/Train/result/'
 logs_train_dir = './model/'  # 记录训练过程与保存模型
 
 train, train_label = Train_inputdata.get_files(train_dir)

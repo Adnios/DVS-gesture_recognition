@@ -2,7 +2,7 @@ import warnings
 warnings.filterwarnings("ignore")
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-
+from time import *
 from PIL import Image
 import Train_inputdata
 import Train_model
@@ -12,10 +12,13 @@ import tensorflow as tf
 
 def get_one_image(train):
     n = len(train)
-    ind = np.random.randint(0, n)
+    # ind = np.random.randint(0, n)
+    ind = 0
+    print(ind)
     img_dir = train[ind]
 
     image = Image.open(img_dir)
+    image = image.convert("YCbCr")#将8bit转换成24bit，参考https://www.cnblogs.com/ssyfj/p/9292062.html
     image = image.resize([227, 227])
     image = np.array(image)
     return image
@@ -26,13 +29,13 @@ def evaluate_one_image():
     Test one image against the saved models and parameters
     返回字符串1~5
     """
-    train_dir = './data/testImage/1/'
+    train_dir = 'Celex_data/reality/1/'
     train, train_label = Train_inputdata.get_files(train_dir)
     image_array = get_one_image(train)
 
     with tf.Graph().as_default():
         BATCH_SIZE = 1
-        N_CLASSES = 5
+        N_CLASSES = 3
 
         image = tf.cast(image_array, tf.float32)
         image = tf.image.per_image_standardization(image)
@@ -77,8 +80,10 @@ def evaluate_one_image():
                 return 5
 
 
+begin_time = time()
+evaluate_one_image()
 
+end_time = time()
 
-
-
-
+run_time = end_time-begin_time
+print ('该循环程序运行时间：',run_time)

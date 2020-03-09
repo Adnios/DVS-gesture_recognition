@@ -18,34 +18,25 @@ def get_files(file_dir):
     label_gesture_2 = []
     gesture_3 = []          # 布
     label_gesture_3 = []
-    gesture_4 = []          # OK
-    label_gesture_4 = []
-    gesture_5 = []          # good
-    label_gesture_5 = []
-
+    gesture_3 = []  # 布
+    label_gesture_3 = []
     # 读取标记好的图像和加入标签
     for file in os.listdir(file_dir):   # file就是要读取的照片
-        name = file.split(sep='.')      # 因为照片的格式是gesture_1.1.jpg/gesture_1.2.jpg
-        if name[0] == 'gesture_1':            # 所以只用读取 . 前面这个字符串
+        name = file.split(sep='_')      # 因为照片的格式是gesture_1.1.jpg/gesture_1.2.jpg
+        if name[0] == 'Scissor':            # 所以只用读取 . 前面这个字符串
             gesture_1.append(file_dir + file)
             label_gesture_1.append(0)        # 把图像和标签加入列表
-        elif name[0] == 'gesture_2':
+        elif name[0] == 'Rock':
             gesture_2.append(file_dir + file)
             label_gesture_2.append(1)
-        elif name[0] == 'gesture_3':
+        else:
             gesture_3.append(file_dir + file)
             label_gesture_3.append(2)
-        elif name[0] == 'gesture_4':
-            gesture_4.append(file_dir + file)
-            label_gesture_4.append(3)
-        else:
-            gesture_5.append(file_dir + file)
-            label_gesture_5.append(4)
 
     # print('There are %d scissors\nThere are %d paper\nThere are %d rock\nThere are %d ok\nThere are %d good'% (len(gesture_1), len(gesture_3), len(gesture_2), len(gesture_4), len(gesture_5)))
 
-    image_list = np.hstack((gesture_1, gesture_2, gesture_3, gesture_4, gesture_5))  # 在水平方向平铺合成一个行向量,np.vstack()在竖直方向上堆叠
-    label_list = np.hstack((label_gesture_1, label_gesture_2, label_gesture_3, label_gesture_4, label_gesture_5))
+    image_list = np.hstack((gesture_1, gesture_2, gesture_3))  # 在水平方向平铺合成一个行向量,np.vstack()在竖直方向上堆叠
+    label_list = np.hstack((label_gesture_1, label_gesture_2, label_gesture_3))
 
     temp = np.array([image_list, label_list])  # 生成一个两行数组列表，大小是2*(1300*5)
     temp = temp.transpose()   # 转置向量，大小变成(1300*5)×2

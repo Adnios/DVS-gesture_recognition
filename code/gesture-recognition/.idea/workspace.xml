@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b6f51a3-b261-49de-9e52-f36f519965e9" name="Default Changelist" comment="" />
+    <list default="true" id="0b6f51a3-b261-49de-9e52-f36f519965e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../CNN/C3D/C3D.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../CNN/C3D/C3D.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +18,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1XISDA6HZ0C69EPGRUZdognfxZW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,19 +30,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/testImage/2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/testImage/2" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Celex_data/reality/1" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.GetNewImage">
+  <component name="RunManager" selected="Python.TestGesture">
     <configuration name="GetNewImage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gesture-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,10 +157,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TestGesture" />
+        <item itemvalue="Python.TestInTest" />
         <item itemvalue="Python.GetNewImage" />
         <item itemvalue="Python.GetTrainImage" />
-        <item itemvalue="Python.TestInTest" />
-        <item itemvalue="Python.TestGesture" />
         <item itemvalue="Python.Train" />
       </list>
     </recent_temporary>
@@ -176,6 +186,9 @@
       <workItem from="1580875661577" duration="1073000" />
       <workItem from="1580887430010" duration="2434000" />
       <workItem from="1580898836272" duration="848000" />
+      <workItem from="1583482275988" duration="2796000" />
+      <workItem from="1583503301311" duration="2135000" />
+      <workItem from="1583757854721" duration="33000" />
     </task>
     <servers />
   </component>
@@ -183,9 +196,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="698" y="359" width="560" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580875807548">
-      <screen x="46" y="28" width="1874" height="1052" />
+    <state x="667" y="318" width="560" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583757861083">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="667" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1583757861083" />
     <state x="698" y="359" width="560" height="386" key="#com.intellij.fileTypes.FileTypeChooser/46.28.1874.1052@46.28.1874.1052" timestamp="1580875807548" />
     <state x="716" y="303" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580732259085">
       <screen x="46" y="28" width="1874" height="1052" />
@@ -199,21 +213,25 @@
       <screen x="46" y="28" width="1874" height="1052" />
     </state>
     <state x="854" y="313" width="352" height="286" key="Github.ShareDialog/46.28.1874.1052@46.28.1874.1052" timestamp="1580875528963" />
-    <state width="1828" height="279" key="GridCell.Tab.0.bottom" timestamp="1580899715369">
-      <screen x="46" y="28" width="1874" height="1052" />
+    <state width="1876" height="335" key="GridCell.Tab.0.bottom" timestamp="1583487124591">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1876" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583487124591" />
     <state width="1828" height="279" key="GridCell.Tab.0.bottom/46.28.1874.1052@46.28.1874.1052" timestamp="1580899715369" />
-    <state width="1828" height="279" key="GridCell.Tab.0.center" timestamp="1580899715368">
-      <screen x="46" y="28" width="1874" height="1052" />
+    <state width="1876" height="335" key="GridCell.Tab.0.center" timestamp="1583487124590">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1876" height="335" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583487124590" />
     <state width="1828" height="279" key="GridCell.Tab.0.center/46.28.1874.1052@46.28.1874.1052" timestamp="1580899715368" />
-    <state width="1828" height="279" key="GridCell.Tab.0.left" timestamp="1580899715367">
-      <screen x="46" y="28" width="1874" height="1052" />
+    <state width="1876" height="335" key="GridCell.Tab.0.left" timestamp="1583487124590">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1876" height="335" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583487124590" />
     <state width="1828" height="279" key="GridCell.Tab.0.left/46.28.1874.1052@46.28.1874.1052" timestamp="1580899715367" />
-    <state width="1828" height="279" key="GridCell.Tab.0.right" timestamp="1580899715368">
-      <screen x="46" y="28" width="1874" height="1052" />
+    <state width="1876" height="335" key="GridCell.Tab.0.right" timestamp="1583487124590">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1876" height="335" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583487124590" />
     <state width="1828" height="279" key="GridCell.Tab.0.right/46.28.1874.1052@46.28.1874.1052" timestamp="1580899715368" />
     <state width="1828" height="344" key="GridCell.Tab.1.bottom" timestamp="1580788127036">
       <screen x="46" y="28" width="1874" height="1052" />
@@ -231,9 +249,10 @@
       <screen x="46" y="28" width="1874" height="1052" />
     </state>
     <state width="1828" height="344" key="GridCell.Tab.1.right/46.28.1874.1052@46.28.1874.1052" timestamp="1580788127035" />
-    <state x="472" y="189" key="SettingsEditor" timestamp="1580892553299">
-      <screen x="46" y="28" width="1874" height="1052" />
+    <state x="435" y="143" key="SettingsEditor" timestamp="1583485071525">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="435" y="143" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583485071525" />
     <state x="472" y="189" key="SettingsEditor/46.28.1874.1052@46.28.1874.1052" timestamp="1580892553299" />
     <state x="631" y="150" width="704" height="807" key="find.popup" timestamp="1580784341840">
       <screen x="46" y="28" width="1874" height="1052" />
@@ -252,7 +271,7 @@
     <SUITE FILE_PATH="coverage/gesture_recognition$main.coverage" NAME="main Coverage Results" MODIFIED="1580732010963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gesture_recognition$SaveGesture.coverage" NAME="SaveGesture Coverage Results" MODIFIED="1580732194255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gesture_recognition$GetTrainImage.coverage" NAME="GetTrainImage Coverage Results" MODIFIED="1580891250552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/gesture_recognition$TestGesture.coverage" NAME="TestGesture Coverage Results" MODIFIED="1580802892747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/gesture_recognition$TestInTest.coverage" NAME="TestInTest Coverage Results" MODIFIED="1580804064692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gesture_recognition$TestInTest.coverage" NAME="TestInTest Coverage Results" MODIFIED="1583485664882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gesture_recognition$TestGesture.coverage" NAME="TestGesture Coverage Results" MODIFIED="1583486400719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -11,9 +11,9 @@ with tf.Graph().as_default():  # 不加的话graph就会冲突
     IMG_H = 227
     BATCH_SIZE = 32
     CAPACITY = 320
-    N_CLASSES = 5
+    N_CLASSES = 3
 
-    test_dir = './data/test/'
+    test_dir = './Celex_data/Test/result/'
 
     test, test_label = Train_inputdata.get_files(test_dir)
     test_batch, test_label_batch = Train_inputdata.get_batch(test,
@@ -22,6 +22,7 @@ with tf.Graph().as_default():  # 不加的话graph就会冲突
                                                              IMG_H,
                                                              BATCH_SIZE,
                                                              CAPACITY)
+    print(test_label_batch)
 
     test_logit = Train_model.cnn_inference(test_batch, BATCH_SIZE, N_CLASSES, keep_prob=1) # no dropout
     test_acc = Train_model.evaluation(test_logit, test_label_batch)
@@ -43,6 +44,7 @@ with tf.Graph().as_default():  # 不加的话graph就会冲突
         if ckpt and ckpt.model_checkpoint_path:
             global_step = ckpt.model_checkpoint_path.split('/')[-1].split('-')[-1]
             saver.restore(sess, ckpt.model_checkpoint_path)
+
             print('Loading success, global_step is %s' % global_step)
             accuracy, loss = sess.run([test_acc, test_loss])
             print("测试集正确率是：%.2f%%" % (accuracy * 100))
@@ -61,6 +63,8 @@ with tf.Graph().as_default():  # 不加的话graph就会冲突
         #         print("测试集损失率：%.2f" % loss)
         # else:
         #     print('No checkpoint file found')
+
+
 
 
 

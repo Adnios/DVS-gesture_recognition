@@ -36,7 +36,7 @@ def get_soup(url):
         print(urllib.error.URLError)
         time.sleep(3)
         get_soup(url)
-    # except urllib.error.URLError:
+    # except urllib.8biterror.URLError:
     #     return "URL Error"
     time.sleep(1)
 
