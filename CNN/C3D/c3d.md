@@ -5,7 +5,7 @@
 there is a lack of generic feature for video analysis. In this work we propose Convolution 3D(C3D) feature, a generic spatio-temporal feature obtained by training a deep 3-dimensional convolutional network on a large annotated video dataset comprising objects, scenes, actions, and other frequently occurring concepts. C3D有三个主要优势。一是共性:实现视频中目标识别、场景分类、动作相似度标注等方面的技术成果。其次，它是紧凑的:获得更好的精度比最好的手工制作的特征和最好的深度图像特征与较低的维特征描述符。第三，它的计算效率:比目前手工制作的功能快91倍，比目前基于深度学习的视频分类方法快两个数量级。
 
 # 1. Introduction
-![C3D–generic video features](./pic/C3D–generic video features.png) 
+![C3D–generic video features](./pic/C3D–generic_video_features.png) 
 
 generic, compact, efficient.两个困难：首先，没有包含各种通用概念的大规模监督视频数据集;其次，没有有效的方法来学习封装外观和动作的紧凑时空特征.
 
@@ -27,15 +27,13 @@ STIPs,HOG,HOF,SIFT,SIFT-3D,HOG3D
 图3说明了两个卷积之间的区别，一个图像上应用2D卷积将输出一个图像，多个图像上应用2D卷积(将它们视为不同的通道)也将得到一个输出图像。只有三维卷积保留了输入信号的时间信息。
 
 ### Network's architecture
-![3D ConvNet](./pic/3D ConvNet.png) 
+![3D ConvNet](./pic/3D_ConvNet.png) 
 
 ### Training
 input:3×16×128×128(3 color channels, 16 frames in time and 128 × 128 frames each)
 
 ### Concept training results
 ![results](./pic/result.png) 
-
-![results](./pic/result2.png) 
 
 # 4. C3D: New Generic Feature for Videos
 ## Application 1: Action recognition

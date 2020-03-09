@@ -45,6 +45,7 @@ FC-LSTM可以看做特殊的ConvLSTM,3D张量的最后两维都是1。
 
 ## 3.2 Encoding-Forecasting Structure
 
+<<<<<<< HEAD
 ![Encoding-forecasting ConvLSTM network for precipitation nowcasting](./pic/Encoding-forecasting ConvLSTM network.png) 
 
 上图包括两个网络: an encoding network and a forecasting network,预测网络的初始状态和单元输出是从编码网络的最后状态复制而来的,The encoding LSTM compresses the whole input sequence into a hidden state tensor and the forecasting LSTM unfolds this hidden state to give the final prediction:
@@ -55,4 +56,6 @@ FC-LSTM可以看做特殊的ConvLSTM,3D张量的最后两维都是1。
 
 # Experiments
 
+=======
+>>>>>>> 2be1f2c6584a62d7a16ca64161d9ebd57d640504
 
