@@ -3,5 +3,3 @@
 ## tmux
 
 1. tmux attach -t 1连接seesion1
-2. 
-

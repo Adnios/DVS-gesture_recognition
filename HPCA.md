@@ -35,9 +35,9 @@
 ![2 design options](https://raw.githubusercontent.com/Adnios/Picture/master/img/20200504225314.png "opt title")
 
 - 首先，NVMC可以放置在如图1a所示的存储器模块前端;因此，它直接连接到DDR4内存总线。Obviously, this design option is available only if the latency of NVM media is competitive with DRAM or if both the iMC and NVMCs support an asynchronous handshake protocol (e.g., JEDEC NVDIMM-P and Intel DDR-T)
-- 选择了b, 后端NVMC和NVM媒体是完全隐藏的，因此NVMC和NVM的操作和时间与同步域无关 。 因此，无论主机iMC的时间约束如何，任何类型的NVM技术都可以用作后端媒体。 
+- 选择了b, 后端NVMC和NVM媒体是完全隐藏的，因此NVMC和NVM的操作和时间与同步域无关 。 因此，无论主机iMC的时间约束如何，任何类型的NVM技术都可以用作后端媒体。
 -  使用NAND闪存作为NVM媒体，因为它的高密度和低成本的特点，以及它建立良好的内存技术。
--  主机iMC无法访问NVM媒体，因为NVMC和NVM媒体与DDR4内存总线物理分离。 直观地说，DRAM作为前端架构可以使用DRAM作为缓存或 NVM介质的缓冲区。 
+-  主机iMC无法访问NVM媒体，因为NVMC和NVM媒体与DDR4内存总线物理分离。 直观地说，DRAM作为前端架构可以使用DRAM作为缓存或 NVM介质的缓冲区。
 
 总线争用
 
@@ -49,5 +49,20 @@
 
 ### POC
 
-在本工作中，我们实现了所提出的DRAM前端体系结构作为概念证明(PoC)设备。 图3显示了我们的PoC设备的印刷电路板(PCB)布局。 
+在本工作中，我们实现了所提出的DRAM前端体系结构作为概念证明(PoC)设备。 图3显示了我们的PoC设备的印刷电路板(PCB)布局。
 
+## Writing
+
+![pic alt](https://raw.githubusercontent.com/Adnios/Picture/master/img/20200505211004.png "opt title")
+
+- 一步一步展开
+
+![pic alt](https://raw.githubusercontent.com/Adnios/Picture/master/img/20200505211555-writing.png "opt title")
+
+![pic alt](https://raw.githubusercontent.com/Adnios/Picture/master/img/20200505211644-writing.png "opt title")
+
+- Discussion
+
+![pic alt](https://raw.githubusercontent.com/Adnios/Picture/master/img/20200505213054-writing.png "opt title")
+
+- Introduction 四段论
