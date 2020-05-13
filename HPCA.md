@@ -66,3 +66,10 @@
 ![pic alt](https://raw.githubusercontent.com/Adnios/Picture/master/img/20200505213054-writing.png "opt title")
 
 - Introduction 四段论
+
+
+## Q-Zilla: A Scheduling Framework and Core Microarchitecture for Tail-tolerant Microservices
+
+https://www.youtube.com/watch?v=pdC-SzwsaA8
+
+
